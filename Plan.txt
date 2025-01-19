@@ -1,0 +1,129 @@
+Checkpoint 1: Project Initialization
+------------------------------------
+------------------------------------
+
+Define project scope and requirements:
+
+  Trading Features: User authentication, portfolio management, real-time market data, order placement.
+  AI Components: Stock recommendations, risk analysis.
+
+DevOps Tools:
+
+  CI/CD: GitHub Actions.
+  Containers: Docker 
+  Hosting: AWS Free Tier (EC2, S3) 
+  Monitoring: Open-source tools like Zabbix.
+
+Set up repository structure on GitHub.
+
+  Tech stack:
+
+    Backend: C++ for core logic (developed using VS Code).
+    Frontend: React (web-based tools like Vite for builds).
+    Database: PostgreSQL.
+    AI: Python with TensorFlow, PyTorch, and scikit-learn (install via pip).
+    Use Figma  for wireframes.
+
+Phase 2: Backend Development (Day 15 - Day 35)
+
+Checkpoint 2: Core API Development
+------------------------------------
+------------------------------------
+
+APIs to build:
+
+  User authentication.
+  Real-time market data fetching using free APIs (e.g., Alpha Vantage).  
+  Order placement and portfolio tracking.
+  Set up PostgreSQL database locally or via free hosting options like ElephantSQL.
+  Write unit tests using Google Test (gtest) for C++.
+
+Checkpoint 3: AI Integration (Part 1)
+------------------------------------
+------------------------------------
+
+Recommendation engine:
+
+  Train using Kaggle datasets and free tools (Jupyter Notebooks on Google Colab, free GPUs).
+  VS Code with Python extensions for local AI development.
+  Implement basic risk assessment with pre-trained models or simple rule-based algorithms.
+
+Phase 3: Frontend Development (Day 36 - Day 56)
+
+Checkpoint 4: User Interface
+------------------------------------
+------------------------------------
+
+Build pages for:
+
+  Dashboard with real-time stock updates (integrate with backend).
+  Portfolio and order history pages.
+  Use Vercel or Netlify 
+
+Checkpoint 5: Responsive Design
+------------------------------------
+------------------------------------
+  
+Make the app responsive for mobile and desktop using Bootstrap or Tailwind CSS 
+
+Phase 4: DevOps Implementation (Day 57 - Day 84)
+
+Checkpoint 6: CI/CD Pipeline
+------------------------------------
+------------------------------------
+  Use GitHub Actions for CI/CD pipelines:
+
+  Automated build and test workflows.
+  Deploy backend to AWS Free Tier (EC2) 
+  Dockerize backend and AI components using Docker Community Edition.
+
+Checkpoint 7: Deployment and Monitoring
+------------------------------------
+------------------------------------
+  Deploy backend with AWS EC2 or GCP
+  Use Zabbix for monitoring.
+  Set up logging with Papertrail 
+
+Phase 5: Advanced AI Features (Day 85 - Day 98)
+
+Checkpoint 8: Enhanced AI Integration
+------------------------------------
+------------------------------------
+Add predictive analytics:
+
+  Stock price prediction models using  local Python environment
+  Sentiment analysis using Hugging Face models.
+  Integrate AI insights into the dashboard.
+
+Checkpoint 9: AI Model Optimization
+------------------------------------
+------------------------------------
+  Fine-tune models using VS Code with Python extensions.
+
+Phase 6: Finalization and Launch (Day 99 - Day 105)
+
+Checkpoint 10: Testing and Final Review
+------------------------------------
+------------------------------------
+Conduct performance testing using tools like Apache JMeter 
+Perform security audits:
+Secure APIs.
+Implement role-based access control.
+Review user feedback from beta testing.
+
+Checkpoint 11: Launch
+------------------------------------
+------------------------------------
+Release the app to production.
+Prepare a user manual or documentation.
+Create marketing and outreach strategies.
+
+Key DevOps Tools Used
+
+Version Control: GitHub.
+CI/CD: GitHub Actions.
+Containers: Docker (Community Edition).
+Cloud Platform: AWS Free Tier or GCP
+Monitoring: Zabbix (open-source).
+Logging: Papertrail 
+AI Tools: TensorFlow, PyTorch, Google Colab, Hugging Face.
