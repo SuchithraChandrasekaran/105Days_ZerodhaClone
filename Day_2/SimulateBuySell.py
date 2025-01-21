@@ -1,5 +1,12 @@
 import random
 
+'''
+Initial Balance: Start with Rs.1000.
+Buy Threshold: The algorithm buys a stock when the price increases by 2% or more.
+Sell Threshold: The algorithm sells the stock when the price decreases by 1% or more.
+Price Fluctuations: The price changes randomly between -5% and +5% in each iteration.
+'''
+
 class TradingSimulation:
     def __init__(self, initial_balance, buy_threshold, sell_threshold):
         self.balance = initial_balance
