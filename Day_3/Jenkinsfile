@@ -11,7 +11,10 @@ pipeline {
         stage('Run Python Script') {
             steps {
                 // Navigate to the folder and run the Python script
-                bat '"C:\\Users\\suchi\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" Day_2\\SimulateBuySell.py'
+                bat '''
+                cd $WORKSPACE
+                python SimulateBuySell.py
+                '''
             }
         }
     }
