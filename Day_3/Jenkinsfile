@@ -8,10 +8,11 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/SuchithraChandrasekaran/105Days_ZerodhaClone.git'
             }
         }
-        stage('Run Python Script') {
+        
+        stage('Build') { 
             steps {
-                // Navigate to the folder and run the Python script
-                bat '"C:\Users\suchi\AppData\Local\Microsoft\WindowsApps\python.exe"  C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\SimplePipeline\\Day_2\\SimulateBuySell.py'
+                // Ensure Python is available in the system's PATH
+                bat 'python -m py_compile ${env.WORKSPACE}\\Day_2\\SimulateBuySell.py'
             }
         }
     }
