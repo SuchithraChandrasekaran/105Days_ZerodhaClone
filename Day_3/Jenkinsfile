@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone Repository') {
+            steps {
+                // Clone the repository
+                git branch: 'main', url: 'https://github.com/SuchithraChandrasekaran/105Days_ZerodhaClone.git'
+            }
+        }
+        stage('Run Python Script') {
+            steps {
+                // Navigate to the folder and run the Python script
+                sh 'python3 ../Day_2/SimulateBuySell.py'
+            }
+        }
+    }
+
+    post {
+        always {
+            echo 'Pipeline execution completed!'
+        }
+    }
+}
+
