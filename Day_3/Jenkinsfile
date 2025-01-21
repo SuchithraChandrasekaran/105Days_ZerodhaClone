@@ -11,10 +11,7 @@ pipeline {
         stage('Run Python Script') {
             steps {
                 // Navigate to the folder and run the Python script
-                bat '''
-                cd $WORKSPACE
-                python SimulateBuySell.py
-                '''
+                bat 'python C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\SimplePipeline\\Day_2\\SimulateBuySell.py'
             }
         }
     }
