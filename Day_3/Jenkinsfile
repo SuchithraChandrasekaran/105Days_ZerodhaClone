@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 pipeline {
     agent any
 
@@ -12,7 +11,7 @@ pipeline {
         stage('Run Python Script') {
             steps {
                 // Navigate to the folder and run the Python script
-                sh 'python3 ../Day_2/SimulateBuySell.py'
+                'python3 Day_2/SimulateBuySell.py'
             }
         }
     }
@@ -23,6 +22,4 @@ pipeline {
         }
     }
 }
-=======
->>>>>>> 1917067deb6e3e2108568156c84357a0420f4cd9
 
