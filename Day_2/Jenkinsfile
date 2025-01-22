@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Check Workspace') {
+            steps {
+                echo "Workspace path is: ${env.WORKSPACE}"
+            }
+        }
+        stage('Clone Repository') {
+            steps {
+                git branch: 'main', url: 'https://github.com/SuchithraChandrasekaran/105Days_ZerodhaClone.git'
+            }
+        }
+        stage('Build') { 
+            steps {
+                // Ensure Python is available in the system's PATH
+                sh 'python  C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\MyPipeline\\Day_2\\SimulateBuySell.py'
+            }
+        }
+    }
+
+    post {
+        always {
+            echo 'Pipeline execution completed!'
+        }
+    }
+}
