@@ -2,6 +2,14 @@ pipeline {
     agent any
 
     stages {
+        stage('Check Workspace') {
+            steps {
+                echo "Workspace path is: ${env.WORKSPACE}"
+            }
+        }
+    }
+
+    stages {
         stage('Clone Repository') {
             steps {
                 // Clone the repository
