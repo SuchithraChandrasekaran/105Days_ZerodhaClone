@@ -1,22 +1,17 @@
 pipeline {
     agent any
-
+    
     stages {
         stage('Check Workspace') {
             steps {
                 echo "Workspace path is: ${env.WORKSPACE}"
             }
         }
-    }
-
-    stages {
         stage('Clone Repository') {
             steps {
-                // Clone the repository
                 git branch: 'main', url: 'https://github.com/SuchithraChandrasekaran/105Days_ZerodhaClone.git'
             }
         }
-        
         stage('Build') { 
             steps {
                 // Ensure Python is available in the system's PATH
