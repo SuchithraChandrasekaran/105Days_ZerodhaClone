@@ -15,7 +15,7 @@ pipeline {
         stage('Build') { 
             steps {
                 // Ensure Python is available in the system's PATH
-                bat 'python -m py_compile C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\MyPipeline\\Day_2\\SimulateBuySell.py'
+                bat 'python  C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\MyPipeline\\Day_2\\SimulateBuySell.py'
             }
         }
     }
