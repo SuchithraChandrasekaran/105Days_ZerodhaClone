@@ -5,7 +5,7 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy the application files into the container
-COPY ./app /app
+COPY . /app
 
 # Define the default command
-CMD ["python", "SimulateBuySell.py"]
+CMD ["python", "-m", "py_compile", "app/SimulateBuySell.py"]
