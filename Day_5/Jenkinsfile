@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        // Update the PATH variable
+        PATH = "C:\\WINDOWS\\SYSTEM32;${env.PATH}"
+    }
     stages {
         stage('Clone Repository') {
             steps {
