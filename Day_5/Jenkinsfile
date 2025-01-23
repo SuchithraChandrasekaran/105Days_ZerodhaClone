@@ -14,13 +14,13 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t Pipeline05:latest Day_5'
+                bat 'docker build -t pipeline05:latest Day_5'
             }
         }
 
         stage('Run Script') {
             steps {
-                bat 'docker run -v %WORKSPACE%/Day_5:/app Pipeline05:latest'
+                bat 'docker run -v %WORKSPACE%/Day_5:/app pipeline05:latest'
             }
         }
     }
