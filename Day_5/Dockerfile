@@ -8,4 +8,4 @@ WORKDIR /app
 COPY . /app
 
 # Define the default command
-CMD ["python", "-m", "py_compile", "app/SimulateBuySell.py"]
+CMD ["python", "-m", "py_compile", "SimulateBuySell.py"]
