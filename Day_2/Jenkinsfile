@@ -14,8 +14,8 @@ pipeline {
         }
         stage('Build') { 
             steps {
-                // Ensure Python is available in the system's PATH
-                'python  Day_2\\SimulateBuySell.py'
+                    // Ensure Python is available in the system's PATH
+                    bat 'python  Day_2\\SimulateBuySell.py'
             }
         }
     }
